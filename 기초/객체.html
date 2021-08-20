@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script  type="text/javascript">
+    //객체란 이름(name)과 값(value)으로 구성된 프로퍼티(property)의 정렬되지 않은 집합입니다.
+
+    /*객체의 생섭 방법
+    var card = {suit  : "하트",rank = "A"};//1.객체 리터널 
+    
+    
+    function Card(suit,rank){//2.생성자로 생성
+        this.suit = suit;
+        this.rank = rank;
+    }
+    var card = new Card("하트","A");
+    */
+   //함수에서는 prototype은 시본적으로 함수에서 빈갯체를 가리킨다.
+   function F(){};
+   console.log(F.prototype);//콘솔창에 F의 프로토타입이 가르키는 걸 출력한다.
+   
+   F.prototype.prop = "prototype vlaue";//상속 준비
+   var obj = new F();//상속
+   console.log(obj.prop);//상속된 prototype vlaue출력한다.
+    </script>
+</body>
+</html>

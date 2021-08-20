@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .abc{
+            background: none;
+        }
+        div{
+            background-color: black;
+            margin-bottom: 10px;
+            height: 150px;
+            width: 150px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="abc">
+        <div id="a"></div>
+        <div class="aaa"></div>
+        <div class="aaa"></div>
+        <div id="b"></div>
+    </div>
+    <script type="text/javascript">
+    // var mbj= new String("ndnfweskf");
+    // alert(mbj.slice(2,1));
+    const c = document.createElement('div');
+    // const abc = document.getElementById('abc');
+    const abc = document.querySelectorAll('.aaa');
+    abc[0] // 배열 객체
+
+    
+    
+    abc.appendChild(c);
+    </script>
+</body>
+</html>
